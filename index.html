@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getshop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="nav-left">
+      <img src="ajalogo.jpg" alt="Getshop Logo" class="logo-img">
+      <a href="index.html" class="nav-logo-text">AJA Everything Store</a>
+      <a href="cart.html" class="btn btn-outline-success">Check Cart</a>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+      </div>
+
+      <button class="btn btn-outline-warning">Search</button>
+      <a href="abouttheauthors.html" class="btn btn-outline-primary">
+        About The Company
+      </a>
+
+      <a href="cart.html" class="btn btn-success">
+        Cart (<span id="cart-count">0</span>)
+      </a>
+    </div>
+  </nav>
+
+  <div class="products-wrapper">
+
+    <h3>Fashion</h3>
+    <div class="row row-cols-5 g-3 mb-4">
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="b3ca6d266e60cea61bbe0d7b853f339d.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>The Beatles Vintage Beige Baby Tee</h4>
+            <p>1,199 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('The Beatles Vintage Beige Baby Tee', 1199)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="ec4c76766d6af90f2d9ae2227b8765c0.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Raw Dark Bowston's Denim Jeans</h4>
+            <p>3,499 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Raw Dark Bowston Denim Jeans', 3499)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="665fe4ea95f092f15ceb11e02415ae13.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Japan S Asics in Black</h4>
+            <p>4,999 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Japan S Asics in Black', 4999)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="a4fe881fb9766f1aca3f8026a0139759.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Greetings Button Up Shirt in French Gingham</h4>
+            <p>4,499 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Greetings Button Up Shirt in French Gingham', 4499)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="7bcfc4485c15410729663fb70ecd04ef.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Unisex Dr. Martens 1461 Bex Smooth Leather Oxford in Black</h4>
+            <p>7,799 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Unisex Dr. Martens 1461 Bex Smooth Leather Oxford in Black', 7799)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h3>Health and Wellness</h3>
+    <div class="row row-cols-5 g-3 mb-4">
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="shopping.webp" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Cetaphil Daily Facial Cleanser 236 ml</h4>
+            <p>650 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Cetaphil Daily Facial Cleanser 236ml', 650)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="cethapil.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Cetaphil Moisturising Lotion Pump 237ml</h4>
+            <p>650 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Cetaphil Moisturising Lotion Pump 237ml', 650)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="sunscreen.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Cetaphil Sun SPF 50+ Gel 50ml</h4>
+            <p>1,100 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Cetaphil Sun SPF 50+ Gel 50ml', 1100)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="dumbell.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>1 kg Fitness Dumbbells Twin-Pack</h4>
+            <p>420 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('1 kg Fitness Dumbbells Twin-Pack', 420)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="yoga.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Core Yoga Mat Terracotta - Toby's Sports</h4>
+            <p>995 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Core Yoga Mat Terracotta', 995)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h3>Electronics</h3>
+    <div class="row row-cols-5 g-3 mb-4">
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="keyboard.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Keychron Multimode Dual System Minimalist Mechanical Keyboard</h4>
+            <p>7,385 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Keychron Multimode Mechanical Keyboard', 7385)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="computah.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>MSI MPG 321URX QD-OLED 32 UHD 240HZ Gaming Monitor</h4>
+            <p>59,799 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('MSI MPG 321URX QD-OLED Gaming Monitor', 59799)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="keyboard.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Huion Kamvas 13 Gen 3 Graphics Tablet</h4>
+            <p>16,399 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Huion Kamvas 13 Gen 3 Graphics Tablet', 16399)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="earphones.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Wired Earbuds USB C Headphone For iPhone 16 15</h4>
+            <p>1,399 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Wired Earbuds USB C Headphone', 1399)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="camera.jpg" class="card-img-top" alt="product">
+          <div class="card-body">
+            <h4>Ricoh GR IIIx HDF Compact Camera</h4>
+            <p>66,999 PHP</p>
+            <button class="btn btn-outline-primary" onclick="addToCart('Ricoh GR IIIx HDF Compact Camera', 66999)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3>Food and Beverages</h3>
+<div class="row row-cols-5 g-3 mb-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="Y2WLXFL5WFEZFFDULOZONZWIUU.avif" class="card-img-top" alt="product">
+      <div class="card-body">
+        <h4>Dubai Chocolate Chewy Cookie</h4>
+        <p>249 PHP</p>
+        <button class="btn btn-outline-primary" onclick="addToCart('Dubai Chocolate Chewy Cookie', 249)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="pngtree-iced-matcha-latte-in-a-plastic-cup-png-image_16393408.png" class="card-img-top" alt="product">
+      <div class="card-body">
+        <h4>Matcha Latte</h4>
+        <p>280 PHP</p>
+        <button class="btn btn-outline-primary" onclick="addToCart('Matcha Latte', 280)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="empanada-ilocos-delicacy.jpg" class="card-img-top" alt="product">
+      <div class="card-body">
+        <h4>Ilocos Empanada</h4>
+        <p>150 PHP</p>
+        <button class="btn btn-outline-primary" onclick="addToCart('Ilocos Empanada', 150)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="8695558_Copycat-Crumbl-Milk-Chocolate-Chip-Cookies_Dotdash-Meredith-Food-Studios_4x3-de4f33d745b3437dbbbfa1a0feb02f8e.jpg" class="card-img-top" alt="product">
+      <div class="card-body">
+        <h4>Crumbl Milk Chocolate Chip Cookies</h4>
+        <p>499 PHP</p>
+        <button class="btn btn-outline-primary" onclick="addToCart('Crumbl Milk Chocolate Chip Cookies', 499)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="9137858_Japanese-Egg-Salad-Sandwich-TamagoSando-4x3-cropped-f7fc99c9d0574d69aacf1fb09fd4b83c.jpg" class="card-img-top" alt="product">
+      <div class="card-body">
+        <h4>Sad Sad Sad Egg Salad Sandwich</h4>
+        <p>70 PHP</p>
+        <button class="btn btn-outline-primary" onclick="addToCart('Sad Sad Sad Egg Salad Sandwich', 70)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

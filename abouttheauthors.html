@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJA Everything Store</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f6fbf6, #eaf4ea);
+      color: #333;
+      text-align: center;
+      padding: 50px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #3A5A40;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #578157;
+      max-width: 700px;
+      margin: 0 auto 50px;
+      line-height: 1.6;
+    }
+
+    .author-container {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
+
+    .author-card {
+      background: white;
+      width: 280px;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+      border-top: 5px solid #578157;
+    }
+
+    .author-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    .author-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #dce8dc;
+      margin-bottom: 20px;
+    }
+
+    .author-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #3A5A40;
+      margin-bottom: 10px;
+    }
+
+    .author-desc {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .shop-link {
+      display: inline-block;
+      margin-top: 60px;
+      padding: 12px 28px;
+      background: #578157;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      box-shadow: 0 5px 15px rgba(87, 129, 87, 0.25);
+    }
+
+    .shop-link:hover {
+      background: #3A5A40;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>AJA Everything Store</h1>
+
+  <p class="subtitle">
+    The team behind the shopping page ✨ <br>
+    Your one-stop shop where you can find everything you need — 
+    simple, convenient, and made just for you.
+  </p>
+
+  <div class="author-container">
+
+    <div class="author-card">
+      <img src="https://picsum.photos/200?random=1" alt="Alexander Jackson" class="author-img">
+      <div class="author-name">Alexander Jackson</div>
+      <div class="author-desc">
+        amjackson2029@clc.pshs.edu.ph <br><br>
+        He codes and codes and codes — our Golgi apparatus of the team.
+      </div>
+    </div>
+
+    <div class="author-card">
+      <img src="https://picsum.photos/200?random=2" alt="Ainslee Velasquez" class="author-img">
+      <div class="author-name">Ainslee Velasquez</div>
+      <div class="author-desc">
+        advelasquez2029@clc.pshs.edu.ph <br><br>
+        Our leader, organizer, and the nucleus that keeps everything together.
+      </div>
+    </div>
+
+    <div class="author-card">
+      <img src="https://picsum.photos/200?random=3" alt="Jessy Tomanan" class="author-img">
+      <div class="author-name">Jessy Tomanan</div>
+      <div class="author-desc">
+        jdtomanan2029@clc.pshs.edu.ph <br><br>
+        Our researcher and creative force behind the page — also our mitochondria.
+      </div>
+    </div>
+
+  </div>
+
+  <a href="index.html" class="shop-link">Visit the Shop</a>
+
+</body>
+</html>
